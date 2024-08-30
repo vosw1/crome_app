@@ -48,12 +48,15 @@ HTML을 통해서 실행 VS 파일 열기
 ### 객체 이해하기
 
 - 객체 형태
-  ````const player = {
+
+  ```const player = {
     name: "min",
     points : 100000,
     smart : true,
-  };```
-  ````
+  };
+
+  ```
+
 - 객체 수정하기
   `player.name = "minkyung";`
 - 객체 추가하기
@@ -63,13 +66,13 @@ HTML을 통해서 실행 VS 파일 열기
 
 - 조건문 형태
 
-```if() {
+```if() { // 참일 때
 
-} else if() {
+} else if() { // 다른 조건 일 때
 
-} else {
+} else { // 그외
 
-}'''
+}
 
 - && 연산자 : 조건이 모두 참일 때
 - || 연산자 : 조건이 하나라도 참일 때
