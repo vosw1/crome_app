@@ -41,6 +41,20 @@ HTML을 통해서 실행 VS 파일 열기
 
 - 추가 : push
 - 수정 : map
-         ```daysOfWeek = daysOfWeek.filter(day => day !== "holiday");```
-        index 
-        ```daysOfWeek[6] = "vacation";```
+  `daysOfWeek = daysOfWeek.filter(day => day !== "holiday");`
+  index
+  `daysOfWeek[6] = "vacation";`
+
+### 객체 이해하기
+
+- 객체 형태
+  ````const player = {
+    name: "min",
+    points : 100000,
+    smart : true,
+  };```
+  ````
+- 객체 수정하기
+  `player.name = "minkyung";`
+- 객체 추가하기
+  `player.lastName = "song";`
