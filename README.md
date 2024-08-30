@@ -11,6 +11,7 @@ JS를 이용해서 만드는 Crome App 만들기
 | **Tools** |        ![VScode](https://img.shields.io/badge/VScode-FF2D54?logo=visualstudiocode&logoColor=white) ![Notion](https://img.shields.io/badge/-Notion-000000?logo=notion&logoColor=white) ![Git](https://img.shields.io/badge/-Git-F05032?logo=git&logoColor=white)         |
 
 ---
+# JS 기본 문법
 
 ### JS 실행 방법 이해하기
 
@@ -54,7 +55,6 @@ HTML을 통해서 실행 VS 파일 열기
     points : 100000,
     smart : true,
   };
-
   ```
 
 - 객체 수정하기
@@ -73,7 +73,8 @@ HTML을 통해서 실행 VS 파일 열기
 } else { // 그외
 
 }
+```
 
 - && 연산자 : 조건이 모두 참일 때
 - || 연산자 : 조건이 하나라도 참일 때
-```
+
