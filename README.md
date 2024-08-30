@@ -32,3 +32,15 @@ HTML을 통해서 실행 VS 파일 열기
 - consol.log()로 찍어보면서 이해하기
 - const : 변할 수 없는 값 - 기본 설정
 - let : 변할 수 있는 값 - 필요할 경우 설정
+
+### 배열 이해하기
+
+- 데이터들의 집합
+- 연산자로 만들기 -> String이라 검색하거나 처리할 수 없음
+- 배열로 만들기 -> 검색하거나 처리할 수 있음
+
+- 추가 : push
+- 수정 : map
+         ```daysOfWeek = daysOfWeek.filter(day => day !== "holiday");```
+        index 
+        ```daysOfWeek[6] = "vacation";```
