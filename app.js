@@ -1,24 +1,21 @@
-// 배열 만들기
-let daysOfWeek = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"];
+// 객체 생성
+let player = {
+    name: "min",
+    points : 100000,
+    smart : true,
+};
 
-// 배열 전체 조회하기
-console.log(daysOfWeek);  
+console.log(player);
 
-// 배열 특정값 가져오기
-console.log(daysOfWeek[5]); 
+// player 객체에 접근하기
+console.log(player.name); // 변경전 값이 출력
+console.log(player.points);
+console.log(player.smart);
 
-// 배열 추가하기
-daysOfWeek.push("holiday");
-console.log(daysOfWeek); 
+// 특정 객체의 값 변경하기
+player.name = "minkyung"; // 객체에는 변경된 값이 출력
+console.log(player.name);
 
-// 배열 특정값 삭제하기
-daysOfWeek = daysOfWeek.filter(day => day !== "holiday");
-console.log(daysOfWeek);  
-
-// map을 이용해서 배열의 특정값 변경하기
-daysOfWeek = daysOfWeek.map(day => day === "sun" ? "off" : day);
-console.log(daysOfWeek);  
-
-// index를 이용해서 배열의 특정값 변경하기
-daysOfWeek[6] = "vacation";
-console.log(daysOfWeek);  
+// 객체에 추가하기
+player.lastName = "song";
+console.log(player);
