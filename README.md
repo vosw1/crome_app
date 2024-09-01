@@ -85,3 +85,13 @@ HTML을 통해서 실행 VS 파일 열기
 - JavaScript의 관점으로 HTML을 보여줌
 - 브라우저가 HTML 정보가 많이 들어있는 DOCUMENT라는 객체를 전달해 줌
 - HTML에 접근하고 수정할 수 있음
+
+### Event Listner
+
+- JavaScript 객체를 이용하여 이벤트 발생
+- 순서
+  - HTML의 요소 가져오기
+  - addEventListener로 호출
+  - Listen 하고 싶은 이벤트 이름 알려주기
+  - 이벤트 발생
+  - 호출할 함수에 전달
