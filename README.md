@@ -95,3 +95,9 @@ HTML을 통해서 실행 VS 파일 열기
   - Listen 하고 싶은 이벤트 이름 알려주기
   - 이벤트 발생
   - 호출할 함수에 전달
+
+### CSS에 스타일 적용하기
+
+- className
+- classList
+- toggle
