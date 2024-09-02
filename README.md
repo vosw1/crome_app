@@ -115,3 +115,40 @@ HTML을 통해서 실행 VS 파일 열기
 - 저장하기 : `localStorage.setItem("키", "값")`
 - 가져오기 : `localStorage.getItem("키")`
 - 삭제하기 : `localStorage.removeItem("키")`
+
+### 시계 만들기
+
+- interval : 일정한 시간 간격으로 특정 작업을 반복 실행하기 위해 사용
+  `setInterval(function, delay);`
+- timeout : 일정 시간이 지난 후에 지정한 함수나 코드를 한 번 실행
+  `setTimeout(function, delay);`
+- Date : 날짜와 시간을 다루기 위한 내장 객체
+
+```const now = new Date();  // 현재 날짜와 시간
+console.log(now);
+
+const specificDate = new Date('2024-09-01T12:30:00'); // 특정 날짜와 시간
+console.log(specificDate);
+
+const now = new Date();
+console.log(now.getFullYear());  // 연도 가져오기
+console.log(now.getMonth());     // 월 가져오기 (0부터 11까지: 0 = 1월, 11 = 12월)
+console.log(now.getDate());      // 일 가져오기
+console.log(now.getHours());     // 시각 가져오기
+console.log(now.getMinutes());   // 분 가져오기
+console.log(now.getSeconds());   // 초 가져오기
+
+const someDate = new Date();
+someDate.setFullYear(2025);   // 연도 설정
+someDate.setMonth(0);         // 월 설정 (0 = 1월)
+someDate.setDate(15);         // 일 설정
+someDate.setHours(10);        // 시각 설정
+someDate.setMinutes(30);      // 분 설정
+console.log(someDate);
+
+const timestamp = Date.now(); // 타임스탬프
+console.log(timestamp);
+```
+
+- padStart : String 최소 길이 조정하기
+  `"1".padStart(2,"0") // 2자리가 아니면 0 추가하기`
