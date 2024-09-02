@@ -152,3 +152,8 @@ console.log(timestamp);
 
 - padStart : String 최소 길이 조정하기
   `"1".padStart(2,"0") // 2자리가 아니면 0 추가하기`
+
+### 랜덤 명언 만들기
+
+- Math.random() : 난수 생성
+- `const todayQuote = quotes[Math.floor(Math.random() * quotes.length)];`
