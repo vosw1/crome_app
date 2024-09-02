@@ -6,10 +6,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="login-form" id="login-form">
-        <input type="text" placeholder="What is your name?" />  <!--사용자로부터 값 입력받기-->
+    <form class="login-form" id="login-form">
+        <input 
+            required 
+            maxlength="15" 
+            type="text" placeholder="What is your name?" />  <!--사용자로부터 값 입력받기-->
         <button>로그인</button><!--버튼-->
         <script src="app.js"></script>
-    </div>
+    </form>
 </body>
 </html> 
