@@ -4,7 +4,7 @@ const toDoList = document.getElementById("todo-list");
 
 const TODOS_KEY = "todos";
 
-let toDos = []; // 비어있는 배열의 상태로 시작
+let toDos = [];
 
 function saveToDos() {
     localStorage.setItem(TODOS_KEY, JSON.stringify(toDos));
@@ -12,37 +12,42 @@ function saveToDos() {
 
 function deleteToDo(event) {
     const li = event.target.parentElement;
+    console.log(li.id);
     li.remove();
 }
 
 function paintToDo(newToDo) {
-    const li = document.createElement("li"); // li 요소 만들기
-    const span = document.createElement("span"); // span 요소 만들기
-    span.innerText = newToDo; // span 내부에 텍스트 설정하기
-    const button = document.createElement("button"); // button 요소 만들기
+    const li = document.createElement("li"); 
+    li.id = newToDo.id; // id 가져오기
+    const span = document.createElement("span"); 
+    span.innerText = newToDo.text; // 객체를 text로 나타내기
+    const button = document.createElement("button"); 
     button.innerText = "❌";
     button.addEventListener("click", deleteToDo);
-    li.appendChild(span); // span을 li에 추가하기
-    li.appendChild(button); // button을 li에 추가하기
+    li.appendChild(span); 
+    li.appendChild(button); 
     toDoList.appendChild(li);
 }
 
 function handleToDoSubmit(event) {
-    event.preventDefault(); // 새로고침 막기
-    const newToDo = toDoInput.value; // 입력 필드의 값 저장
-    toDoInput.value = ""; // 입력 필드 비우기
-    toDos.push(newToDo); // 배열에 추가하기
-    paintToDo(newToDo); // 저장된 값을 paintToDo 함수로 전달
-    saveToDos(); // localStorage에 저장하기
+    event.preventDefault(); 
+    const newToDo = toDoInput.value; 
+    toDoInput.value = ""; 
+    const newTodoObj = {
+        text: newToDo,
+        id: Date.now(),
+    }
+    toDos.push(newTodoObj); // 배열에 추가하기
+    paintToDo(newTodoObj); // 저장된 값을 paintToDo 함수로 전달
+    saveToDos(); 
 }
 
 toDoForm.addEventListener("submit", handleToDoSubmit);
 
-// 저장된 todos 불러오기
 const savedToDos = localStorage.getItem(TODOS_KEY);
 
 if (savedToDos !== null) {
     const parsedToDos = JSON.parse(savedToDos);
-    toDos = parsedToDos; // 이전 값 복원 해주기
+    toDos = parsedToDos; 
     parsedToDos.forEach(paintToDo); 
 } 
