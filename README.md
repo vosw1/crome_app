@@ -157,3 +157,9 @@ console.log(timestamp);
 
 - Math.random() : 난수 생성
 - `const todayQuote = quotes[Math.floor(Math.random() * quotes.length)];`
+
+### 랜덤 배경 이미지 만들기
+
+- img 요소 추가하기 : `const bgImage = document.createElement("img"); `
+- 이미지 경로 설정하기 : `bgImage.src = `img/${choseImage}`;`
+- body 내부에 추가하기 : `document.body.appendChild(bgImage);`
