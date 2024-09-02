@@ -108,3 +108,10 @@ HTML을 통해서 실행 VS 파일 열기
 - <input> : 사용자로부터 데이터를 입력받기 위해 사용
 - <button> : 버튼을 만들 때 사용
 - <a> : 지정된 링크로 이동할 때 사용
+
+### Local Storage
+
+- 웹 브라우저가 데이터를 영구적으로 저장할 수 있는 기능을 제공
+- 저장하기 : `localStorage.setItem("키", "값")`
+- 가져오기 : `localStorage.getItem("키")`
+- 삭제하기 : `localStorage.removeItem("키")`
