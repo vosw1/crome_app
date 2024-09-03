@@ -85,3 +85,9 @@
 #quote div:last-child {
     font-size: 20px; 
 }
+
+/*시계 스타일*/
+#clock {
+    position: absolute; 
+    left: 3%;
+}

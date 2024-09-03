@@ -14,7 +14,7 @@ function deleteToDo(event) {
     const li = event.target.parentElement;
     li.remove();
     toDos = toDos.filter(toDo => toDo.id !== parseInt(li.id)); // 삭제하려는 id를 제외한 배열 만들기
-    saveToDos(); // 새 배열 저장하기
+    saveToDos(); // 새 배열에 저장하기
 }
 
 function paintToDo(newToDo) {
