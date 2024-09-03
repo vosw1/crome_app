@@ -55,7 +55,7 @@
 /* 인사말 스타일 */
 #greeting {
     position: fixed;
-    top: 20%;
+    top: 15%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 50px;
@@ -95,7 +95,7 @@
 /* todo-form 스타일 설정 */
 #todo-form {
     position: fixed; 
-    top: 30%; 
+    top: 25%; 
     left: 10%; 
     padding: 20px;
     text-align: center; 
@@ -116,7 +116,7 @@
 
 #todo-list{
     position: fixed; 
-    top: 37%; 
+    top: 32%; 
     left: 12%; 
     padding: 15px; 
 }
@@ -134,7 +134,7 @@
 /* 페이지네이션 버튼 스타일 설정 */
 #pagination {
     position: fixed; 
-    bottom: 21%; 
+    bottom: 26%; 
     left: 14%; 
 }
 
@@ -146,4 +146,12 @@
     border: none; 
     border-radius: 5px; 
     background-color: #f0f0f0; 
+}
+
+/*날씨 스타일 설정*/
+#weather {
+    position: fixed; /* 화면에 고정 */
+    top: 7%;
+    left: 3%;
+    font-size: 20px;
 }
