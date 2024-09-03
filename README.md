@@ -231,3 +231,49 @@ if (savedToDos !== null) {
     parsedToDos.forEach(paintToDo);
 }
 ```
+
+### 현재 위치의 날씨
+
+- Geolocation API : 위치 기반 서비스를 제공
+  `navigator.geolocation.getCurrentPosition()`
+- **`getCurrentPosition`** : 현재 위치 찾기
+  - **성공 시 실행되는 콜백 함수**: 위치 정보를 성공적으로 가져왔을 때 호출
+  - **실패 시 실행되는 콜백 함수**: 위치 정보를 가져오는 데 실패했을 때 호출
+
+```function onGeoOk(position){
+    const lat = position.coords.latitude;
+    const lng = position.coords.longitude;
+    console.log(`당신은 ${lat} ${lng} 있어요~`);
+}
+
+function onGeoError(){
+    alert("위치를 찾을 수 없어요. 날씨를 찾을 수 없어요ㅜ")
+}
+
+navigator.geolocation.getCurrentPosition(onGeoOk, onGeoError);
+```
+
+- Weather API : 해당 위치의 날씨 제공
+  `https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}&units=metric`
+
+```const API_KEY = "46c42ba74d2d22c044c652e13464ef9b";
+
+function onGeoOk(position){
+    const lat = position.coords.latitude;
+    const lon = position.coords.longitude;
+    const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`;
+    fetch(url).then(response =>
+        response.json()).then((data) => {
+            const weather = document.querySelector("#weather span:first-child");
+            const city = document.querySelector("#weather span:last-child");
+        city.innerText = data.name;
+        weather.innerText = `${data.weather[0].main} / ${data.main.temp}`;
+    });
+}
+
+function onGeoError(){
+    alert("위치를 찾을 수 없어요. 날씨를 찾을 수 없어요ㅜ");
+}
+
+navigator.geolocation.getCurrentPosition(onGeoOk, onGeoError);
+```
