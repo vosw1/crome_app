@@ -54,7 +54,7 @@
 /* 인사말 스타일 */
 #greeting {
     position: fixed;
-    top: 50%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 50px;
