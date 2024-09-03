@@ -117,7 +117,7 @@
 #todo-list{
     position: fixed; 
     top: 37%; 
-    left: 13%; 
+    left: 12%; 
     padding: 15px; 
 }
 
@@ -129,4 +129,21 @@
     cursor: pointer; /* 버튼 위에 마우스를 올리면 포인터로 변경 */
     margin-left: 10px;
     margin-bottom: 10px; /*list 사이에 줄 간격 주기*/
+}
+
+/* 페이지네이션 버튼 스타일 설정 */
+#pagination {
+    position: fixed; 
+    bottom: 21%; 
+    left: 14%; 
+}
+
+#pagination button {
+    padding: 10px 10px;
+    margin: 0 10px; 
+    font-size: 10px; 
+    cursor: pointer;
+    border: none; 
+    border-radius: 5px; 
+    background-color: #f0f0f0; 
 }
