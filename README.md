@@ -8,7 +8,7 @@ JS를 이용해서 만드는 Crome App 만들기
 
 | Framework | ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=flat&logo=javascript&logoColor=white) ![CSS](https://img.shields.io/badge/-CSS3-1572B6?logo=css3&logoColor=white) ![HTML](https://img.shields.io/badge/-HTML5-E34F26?logo=html5&logoColor=white) |
 | :-------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| **Tools** |        ![VScode](https://img.shields.io/badge/VScode-green?logo=visualstudiocode&logoColor=white) ![Notion](https://img.shields.io/badge/-Notion-000000?logo=notion&logoColor=white) ![Git](https://img.shields.io/badge/-Git-F05032?logo=git&logoColor=white)         |
+| **Tools** |         ![VScode](https://img.shields.io/badge/VScode-green?logo=visualstudiocode&logoColor=white) ![Notion](https://img.shields.io/badge/-Notion-000000?logo=notion&logoColor=white) ![Git](https://img.shields.io/badge/-Git-F05032?logo=git&logoColor=white)         |
 
 ---
 
@@ -206,6 +206,8 @@ function handleToDoSubmit(event) {
 ```function deleteToDo(event) {
     const li = event.target.parentElement;
     li.remove();
+    toDos = toDos.filter(toDo => toDo.id !== parseInt(li.id)); // 삭제하려는 id를 제외한 배열 만들기
+    saveToDos(); // 새 배열 저장하기
 }
 
 function paintToDo(newToDo) {

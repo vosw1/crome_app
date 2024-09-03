@@ -12,15 +12,16 @@ function saveToDos() {
 
 function deleteToDo(event) {
     const li = event.target.parentElement;
-    console.log(li.id);
     li.remove();
+    toDos = toDos.filter(toDo => toDo.id !== parseInt(li.id)); // 삭제하려는 id를 제외한 배열 만들기
+    saveToDos(); // 새 배열 저장하기
 }
 
 function paintToDo(newToDo) {
     const li = document.createElement("li"); 
-    li.id = newToDo.id; // id 가져오기
+    li.id = newToDo.id; 
     const span = document.createElement("span"); 
-    span.innerText = newToDo.text; // 객체를 text로 나타내기
+    span.innerText = newToDo.text; 
     const button = document.createElement("button"); 
     button.innerText = "❌";
     button.addEventListener("click", deleteToDo);
@@ -37,8 +38,8 @@ function handleToDoSubmit(event) {
         text: newToDo,
         id: Date.now(),
     }
-    toDos.push(newTodoObj); // 배열에 추가하기
-    paintToDo(newTodoObj); // 저장된 값을 paintToDo 함수로 전달
+    toDos.push(newTodoObj); 
+    paintToDo(newTodoObj); 
     saveToDos(); 
 }
 
