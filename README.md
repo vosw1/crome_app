@@ -1,5 +1,4 @@
 # Project
-
 JS를 이용해서 만드는 Crome App 만들기
 
 ---
@@ -12,6 +11,11 @@ JS를 이용해서 만드는 Crome App 만들기
 
 ---
 
+![image](https://github.com/user-attachments/assets/93d9395b-4a80-459c-b114-240b7931e66b)
+![image](https://github.com/user-attachments/assets/ad56549e-c33b-47e9-a0f6-6532b2e3bc8e)
+
+
+---
 # JS 기본 문법
 
 ### JS 실행 방법 이해하기
