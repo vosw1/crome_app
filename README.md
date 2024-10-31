@@ -9,10 +9,12 @@ JS를 이용해서 만드는 Crome App 만들기
 ---
 
 # Tech Stack
-
-| Framework | ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=flat&logo=javascript&logoColor=white) ![CSS](https://img.shields.io/badge/-CSS3-1572B6?logo=css3&logoColor=white) ![HTML](https://img.shields.io/badge/-HTML5-E34F26?logo=html5&logoColor=white) |
-| :-------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| **Tools** |         ![VScode](https://img.shields.io/badge/VScode-green?logo=visualstudiocode&logoColor=white) ![Notion](https://img.shields.io/badge/-Notion-000000?logo=notion&logoColor=white) ![Git](https://img.shields.io/badge/-Git-F05032?logo=git&logoColor=white)         |
+| Tech         | Content                                                                                                                                                                                                                     |
+| :----------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Language**  | ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=flat&logo=javascript&logoColor=white) |
+| Framework | ![CSS](https://img.shields.io/badge/-CSS3-1572B6?logo=css3&logoColor=white) ![HTML](https://img.shields.io/badge/-HTML5-E34F26?logo=html5&logoColor=white) |
+| **IDE**   | ![VScode](https://img.shields.io/badge/VScode-blue?logo=vscode&logoColor=white)|
+| **Tools** | ![Notion](https://img.shields.io/badge/-Notion-000000?logo=notion&logoColor=white) ![Git](https://img.shields.io/badge/-Git-F05032?logo=git&logoColor=white)         |
 
 ---
 
